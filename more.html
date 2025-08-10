@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Gallery</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  body {
+    background-image: url("page3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keep background static */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4B0000;
+    overflow: hidden; /* Hide default scrollbar */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  /* Scrollable main wrapper holding all content */
+  .main-wrapper {
+    width: 100%;
+    max-width: 950px;
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Vertical scroll */
+    padding: 40px 20px;
+    box-sizing: border-box;
+    background: transparent; /* So background is visible */
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  /* Gallery Title */
+  h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 5rem;
+    color: #4B0000;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow:
+      0 0 8px #7B0000,
+      0 0 15px #AA1111,
+      0 0 25px #FF5555;
+    user-select: none;
+  }
+
+  /* Cards container: grid 2 cards per row */
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px 30px;
+    justify-items: center;
+  }
+
+  /* Each card */
+  .card {
+    background: rgba(80, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    padding: 25px 20px 20px 20px;
+    box-shadow: 0 0 15px rgba(75, 0, 0, 0.7);
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+  }
+
+  .card h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #FF7F7F;
+    margin-bottom: 15px;
+    text-shadow: 0 0 6px #AA4444;
+    user-select: none;
+    flex-shrink: 0;
+    text-align: center;
+  }
+
+  /* Scrollable images container inside each card */
+  .images-container {
+    max-height: 410px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 15px;
+    background: rgba(100, 0, 0, 0.7);
+    box-shadow: inset 0 0 10px #990000;
+    padding: 15px;
+    flex-grow: 1;
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-auto-rows: 120px;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .image-grid img {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #ff7f7f;
+    user-select: none;
+    object-fit: cover;
+  }
+
+  /* Buttons */
+  .buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .buttons a {
+    padding: 15px 35px;
+    background-color: rgba(75, 0, 0, 0.85);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(75, 0, 0, 0.7);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    user-select: none;
+  }
+  .buttons a:hover {
+    background-color: #8B0000;
+    transform: scale(1.1);
+  }
+</style>
+</head>
+<body>
+  <div class="main-wrapper">
+    <div class="main-content">
+
+      <h1>The Gallery</h1>
+
+      <div class="container">
+
+        <div class="card">
+          <h2>Me, Myself and I</h2>
+          <div class="images-container">
+            <div class="image-grid">
+              <!-- 30 images -->
+              <img src="me1.jpg" alt="Me 1" />
+              <img src="me2.jpg" alt="Me 2" />
+              <img src="me3.jpg" alt="Me 3" />
+              <img src="me4.jpg" alt="Me 4" />
+              <img src="me5.jpg" alt="Me 5" />
+              <img src="me6.jpg" alt="Me 6" />
+              <img src="me7.jpg" alt="Me 7" />
+              <img src="me8.jpg" alt="Me 8" />
+              <img src="me9.jpg" alt="Me 9" />
+              <img src="me10.jpg" alt="Me 10" />
+              <img src="me11.jpg" alt="Me 11" />
+              <img src="me12.jpg" alt="Me 12" />
+              <img src="me13.jpg" alt="Me 13" />
+              <img src="me14.jpg" alt="Me 14" />
+              <img src="me15.jpg" alt="Me 15" />
+              <img src="me16.jpg" alt="Me 16" />
+              <img src="me17.jpg" alt="Me 17" />
+              <img src="me18.jpg" alt="Me 18" />
+              <img src="me19.jpg" alt="Me 19" />
+              <img src="me20.jpg" alt="Me 20" />
+              <img src="me21.jpg" alt="Me 21" />
+              <img src="me22.jpg" alt="Me 22" />
+              <img src="me23.jpg" alt="Me 23" />
+              <img src="me24.jpg" alt="Me 24" />
+              <img src="me25.jpg" alt="Me 25" />
+              <img src="me26.jpg" alt="Me 26" />
+              <img src="me27.jpg" alt="Me 27" />
+              <img src="me28.jpg" alt="Me 28" />
+              <img src="me29.jpg" alt="Me 29" />
+              <img src="me30.jpg" alt="Me 30" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Baby Days</h2>
+          <div class="images-container">
+            <div class="image-grid">
+              <img src="cute1.jpg" alt="Cute 1" />
+              <img src="cute2.jpg" alt="Cute 2" />
+              <img src="cute3.jpg" alt="Cute 3" />
+              <img src="cute4.jpg" alt="Cute 4" />
+              <img src="cute5.jpg" alt="Cute 5" />
+              <img src="cute6.jpg" alt="Cute 6" />
+              <img src="cute7.jpg" alt="Cute 7" />
+              <img src="cute8.jpg" alt="Cute 8" />
+              <img src="cute9.jpg" alt="Cute 9" />
+              <img src="cute10.jpg" alt="Cute 10" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>My Cat Mighty</h2>
+          <div class="images-container">
+            <div class="image-grid">
+              <img src="cat1.jpg" alt="Cat 1" />
+              <img src="cat2.jpg" alt="Cat 2" />
+              <img src="cat3.jpg" alt="Cat 3" />
+              <img src="cat4.jpg" alt="Cat 4" />
+              <img src="cat5.jpg" alt="Cat 5" />
+              <img src="cat6.jpg" alt="Cat 6" />
+              <img src="cat7.jpg" alt="Cat 7" />
+              <img src="cat8.jpg" alt="Cat 8" />
+              <img src="cat9.jpg" alt="Cat 9" />
+              <img src="cat10.jpg" alt="Cat 10" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Family Moments</h2>
+          <div class="images-container">
+            <div class="image-grid">
+              <img src="fam1.jpg" alt="Fam 1" />
+              <img src="fam2.jpg" alt="Fam 2" />
+              <img src="fam3.jpg" alt="Fam 3" />
+              <img src="fam4.jpg" alt="Fam 4" />
+              <img src="fam5.jpg" alt="Fam 5" />
+              <img src="fam6.jpg" alt="Fam 6" />
+              <img src="fam7.jpg" alt="Fam 7" />
+              <img src="fam8.jpg" alt="Fam 8" />
+              <img src="fam9.jpg" alt="Fam 9" />
+              <img src="fam10.jpg" alt="Fam 10" />
+              <img src="fam11.jpg" alt="Fam 11" />
+              <img src="fam12.jpg" alt="Fam 12" />
+              <img src="fam13.jpg" alt="Fam 13" />
+              <img src="fam14.jpg" alt="Fam 14" />
+              <img src="fam15.jpg" alt="Fam 15" />
+              <img src="fam16.jpg" alt="Fam 16" />
+              <img src="fam17.jpg" alt="Fam 17" />
+              <img src="fam18.jpg" alt="Fam 18" />
+              <img src="fam19.jpg" alt="Fam 19" />
+              <img src="fam20.jpg" alt="Fam 20" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Friends Forever</h2>
+          <div class="images-container">
+            <div class="image-grid">
+              <img src="friend1.jpg" alt="Friend 1" />
+              <img src="friend2.jpg" alt="Friend 2" />
+              <img src="friend3.jpg" alt="Friend 3" />
+              <img src="friend4.jpg" alt="Friend 4" />
+              <img src="friend5.jpg" alt="Friend 5" />
+              <img src="friend6.jpg" alt="Friend 6" />
+              <img src="friend7.jpg" alt="Friend 7" />
+              <img src="friend8.jpg" alt="Friend 8" />
+              <img src="friend9.jpg" alt="Friend 9" />
+              <img src="friend10.jpg" alt="Friend 10" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="buttons">
+        <a href="MYWEBSITE.html">Home</a>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

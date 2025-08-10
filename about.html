@@ -1,0 +1,184 @@
+           <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("page 2.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        /* Main Container */
+        .main-content {
+            max-width: 1200px;
+        }
+
+        /* Main Title */
+        h1 {
+            font-size: 3rem;
+            color: #FFD700; /* Richer gold */
+            text-shadow: 
+                0 0 5px #FFD700,   
+                0 0 10px #DAA520,  
+                0 0 20px #B8860B,  
+                0 0 30px black;    
+            margin-top: 20px;
+        }
+
+        /* Card Layout */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 30px;
+        }
+
+        /* Cards */
+        .card {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(8px);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .card h2 {
+            color: #ff4d6d; /* brighter red tone for readability */
+    text-shadow:
+        0 0 8px #ff4d6d,
+        0 0 16px #b22222,
+        0 0 24px #ff1a3c,
+        2px 2px 4px rgba(0, 0, 0, 0.7); /* subtle black outline for contrast */
+    margin-bottom: 10px;
+        }
+
+        .highlight {
+            color: #800020;
+            font-weight: bold;
+            text-shadow: 0 0 5px #800020, 0 0 10px #b22222;
+        }
+
+        /* Buttons - vertically stacked */
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .buttons a {
+            padding: 15px 30px;
+            background-color: rgba(128, 0, 32, 0.85);
+            color: white;
+            text-decoration: none;
+            font-size: 1.3rem;
+            border-radius: 12px;
+            font-weight: bold;
+            box-shadow: 0 0 10px rgba(128, 0, 32, 0.7);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .buttons a:hover {
+            background-color: rgba(178, 34, 34, 0.9);
+            transform: scale(1.05);
+        }
+
+        /* Mood Images Column */
+        .mood-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .mood-column img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.6);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Mood Pictures on the Side -->
+    <div class="mood-column">
+        <img src="mood1.jpg" alt="Mood 1">
+        <img src="mood2.jpg" alt="Mood 2">
+        <img src="mood3.jpg" alt="Mood 3">
+        <img src="mood4.jpg" alt="Mood 4">
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>This page contains all about my life</h1>
+
+        <div class="container">
+            <div class="card">
+                <h2>All About Me</h2>
+                <p><span class="highlight">Name:</span> Angelica Rhian Galletes</p>
+                <p><span class="highlight">Nickname:</span> Anj, Ange, Rhi, Angel, Lica, Icah, Ian, Rhirhi</p>
+                <p><span class="highlight">Date of Birth:</span> June 22, 2011</p>
+                <p><span class="highlight">Age:</span> 14 years old</p>
+                <p><span class="highlight">Height:</span> 159cm, 5’2 and a half</p>
+                <p><span class="highlight">Address:</span> Sierra Valley Gardens, Janssenville Subdivision, Snt. Bernardine St., BLK. 13 LT. 14, Brgy. San Isidro, Taytay, Rizal</p>
+                <p><span class="highlight">Mother:</span> Cristine G. Baleña</p>
+                <p><span class="highlight">Father:</span> Paul Raymond U. Baleña</p>
+                <p><span class="highlight">Siblings:</span> Eldest: Stephen Amber Galletes, Youngest: Steven Bryant G. Baleña</p>
+            </div>
+
+            <div class="card">
+                <h2>Meet My Fam</h2>
+                <p>My mother is a businesswoman with a shop near Sumulong MNHS. She’s a good cook, a Super Mom of three 😉. She’s a barista and currently sells takoyaki and various Filipino dishes at her shop. During last year's Astro Camp, she sold coffee at the event.</p>
+                <p>My father is a Licensed Software Engineer at Air Asia. He works from home, is completely chill, and has the coolest rules of all time 💙</p>
+                <p>I have two brothers. My older brother, Stephen, is a first-year senior high school scholar at STI, and my younger brother, Steven, is in Grade 3 at JES.</p>
+            </div>
+
+            <div class="card">
+                <h2>My Interests</h2>
+                <p>I like cats, anything red, rainy season, Studio Ghibli, and stuffed toys! ><</p>
+                <p><span class="highlight">Hobbies:</span> Reading, painting, playing the piano, drawing/sketching, dancing, crocheting, watching K-dramas and horror movies, and playing online games. I also love painting my nails, writing (poems, journals, and essays), editing videos, cutting and styling my hair according to my mood, cooking (got it from Mom), and playing PlayStation games like Tekken and Little Nightmares.</p>
+            </div>
+
+            <div class="card">
+                <h2>Games</h2>
+                <p>Mobile Legends, Call of Duty Mobile, Roblox (Horror), Stardew Valley, Cookie Run Kingdom, Genshin Impact, Colorful Stage, Valorant, Counter-Strike, Stumble Guys, etc.</p>
+            </div>
+
+            <div class="card">
+                <h2>Music & Philosophers</h2>
+                <p><span class="highlight">Philosophers:</span> Angela Davis and Mary Wollstonecraft</p>
+                <p><span class="highlight">Listens to:</span> Wave to Earth, PNE, Lyn Lapid, Sombr, Mother Taylor, Rob Daniel, Arthur Nery, Lifehouse, and Tj Monterde</p>
+            </div>
+
+            <div class="card">
+                <h2>Favorite Quote</h2>
+                <p>“For years I have endeavored to calm an impetuous tide—laboring to make my feelings take an orderly course—it was striving against the stream.” <br>— Mary Wollstonecraft</p>
+            </div>
+        </div>
+
+        <!-- Buttons stacked vertically -->
+        <div class="buttons">
+            <a href="MYWEBSITE.html">Go to First Page</a>
+            <a href="#">Back to Top</a>
+            <a href="more.html">Go to Gallery</a>
+        </div>
+    </div>
+
+</body>
+</html>
